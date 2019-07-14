@@ -4,7 +4,7 @@ function addCam(){
     videoElement.setAttribute('id', 'camVideo');
     videoElement.setAttribute('style', "height: 200px; position: absolute; bottom: 30px; right: 30px;");
 
-    let testeElement = document.getElementById('main');
+    let testeElement = document.getElementsByTagName('body')[0];
     testeElement.appendChild(videoElement);
 
     let video = document.querySelector("#camVideo");
