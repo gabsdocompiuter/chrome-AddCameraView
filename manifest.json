@@ -1,0 +1,32 @@
+{
+    "name": "ACV - AddCameraView",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "Add Camera View",
+
+    "icons": {
+        "16": "./img/icon16.png",
+        "24": "./img/icon24.png",
+        "32": "./img/icon32.png",
+        "64": "./img/icon64.png",
+        "128": "./img/icon128.png",
+        "256": "./img/icon256.png",
+        "512": "./img/icon512.png"
+    },
+
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ],
+    
+    "background": {
+        "scripts": [
+            "./js/background.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "Inject!"
+    }
+}
